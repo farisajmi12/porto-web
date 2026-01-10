@@ -4,29 +4,29 @@ const socialLinks = [
   {
     name: 'Email',
     icon: Mail,
-    href: 'mailto:revina.agustin@example.com',
-    label: 'revina.agustin@example.com',
+    href: 'mailto:reviinagstn@gmail.com',
+    label: 'reviinagstn@gmail.com',
     color: 'hover:text-red-400',
   },
   {
     name: 'GitHub',
     icon: Github,
-    href: 'https://github.com',
+    href: 'https://github.com/RevinaAgustin/',
     label: '@revinaagustin',
     color: 'hover:text-gray-300',
   },
   {
     name: 'LinkedIn',
     icon: Linkedin,
-    href: 'https://linkedin.com',
+    href: 'https://www.linkedin.com/in/revina-agustin-rahma/',
     label: 'Revina Agustin Rahma',
     color: 'hover:text-blue-400',
   },
   {
     name: 'Instagram',
     icon: Instagram,
-    href: 'https://instagram.com',
-    label: '@revina.dev',
+    href: 'https://www.instagram.com/revinagstn_?igsh=MXRvY2ZybjFhcmpkYw==',
+    label: '@revinagstn_',
     color: 'hover:text-pink-400',
   },
 ];
@@ -134,7 +134,7 @@ const ContactSection = () => {
                 </button>
 
                 <p className="text-xs text-muted-foreground text-center mt-4">
-                  * Form ini masih dalam pengembangan. Silakan hubungi melalui email atau sosial media.
+                  * Form ini belum aktif sepenuhnya. Untuk saat ini, silakan hubungi saya melalui email atau sosial media di sebelah kiri.
                 </p>
               </form>
             </div>

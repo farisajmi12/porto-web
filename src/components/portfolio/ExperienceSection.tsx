@@ -1,40 +1,64 @@
-import { Briefcase, Users, Award } from 'lucide-react';
+import { Briefcase, Users, Award, } from 'lucide-react';
 
 const experiences = [
   {
-    title: 'Staff Divisi IT',
-    organization: 'Himpunan Mahasiswa Teknik Informatika (HMTI)',
-    period: '2024 - Sekarang',
-    type: 'Organisasi',
-    icon: Users,
-    tasks: [
-      'Mengelola dan memelihara website resmi himpunan',
-      'Membuat desain publikasi digital untuk event kampus',
-      'Berkolaborasi dengan divisi lain untuk kebutuhan teknologi',
-    ],
-  },
-  {
-    title: 'Web Developer Volunteer',
-    organization: 'Panitia Dies Natalis ITI ke-40',
-    period: 'September 2023',
-    type: 'Kepanitiaan',
+    title: "UI/UX & Frontend Developer Intern",
+    organization: "PT Flaz Technology Indonesia (Remote)",
+    period: "Okt 2025 – Jan 2026",
+    type: "Magang",
     icon: Briefcase,
     tasks: [
-      'Membangun landing page untuk event Dies Natalis',
-      'Mengimplementasikan fitur countdown dan registrasi',
-      'Bekerja dalam tim dengan deadline yang ketat',
+      "Menerjemahkan kebutuhan bisnis menjadi user flow, wireframe, dan desain high-fidelity di Figma.",
+      "Mengembangkan kode Front-End yang responsif dengan struktur navigasi antarmuka yang dinamis.",
+      "Berkoordinasi dengan tim Back-End dan mengelola version control menggunakan GitHub.",
     ],
   },
   {
-    title: 'Peserta Bootcamp',
-    organization: 'Dicoding Indonesia - Frontend Developer Path',
-    period: 'Juli - Agustus 2024',
-    type: 'Sertifikasi',
+    title: "Product Manager – GlowTech (AI Skincare Assistant)",
+    organization: "Proyek Rekayasa Perangkat Lunak – ITI",
+    period: "Maret 2025 – Juni 2025",
+    type: "Proyek Akademik",
     icon: Award,
     tasks: [
-      'Mempelajari fundamental web development',
-      'Membangun proyek akhir berupa web app interaktif',
-      'Mendapatkan sertifikasi resmi dari Dicoding',
+      "Menyusun visi produk, backlog fitur, dan jadwal pengembangan dengan pendekatan Agile.",
+      "Mendistribusikan tugas lintas divisi dan memfasilitasi kolaborasi tim selama siklus pengembangan.",
+      "Mempresentasikan prototipe web asisten perawatan kulit berbasis AI kepada dosen.",
+    ],
+  },
+  {
+    title: "Mobile App Developer – StudySprint",
+    organization: "Proyek Pengembangan Aplikasi Mobile – ITI",
+    period: "April 2025 – Juni 2025",
+    type: "Proyek Mandiri",
+    icon: Briefcase,
+    tasks: [
+      "Membangun aplikasi produktivitas berbasis Android menggunakan Ionic React.",
+      "Mengimplementasikan logika manajemen waktu belajar dan penyimpanan data lokal (local storage).",
+      "Mengelola siklus pengembangan penuh: dari perancangan UI hingga deployment file APK.",
+    ],
+  },
+  {
+    title: "Project Leader – SpyTech Smart Helmet IoT",
+    organization: "Proyek Kewirausahaan Lanjut – ITI",
+    period: "Sept 2025 – Sekarang",
+    type: "Kepemimpinan & Venture",
+    icon: Award,
+    tasks: [
+      "Memimpin perumusan visi produk, strategi bisnis, dan value proposition untuk solusi helm pintar berbasis IoT.",
+      "Mengkoordinasikan pengembangan integrasi ESP32, GPS, dan notifikasi real-time via Telegram Bot.",
+      "Mewakili tim dalam sesi pitching dan presentasi Demo Day di hadapan evaluator.",
+    ],
+  },
+    {
+    title: "Google Student Ambassador",
+    organization: "Institut Teknologi Indonesia",
+    period: "2024 – Sekarang",
+    type: "Kepemimpinan & Komunitas",
+    icon: Users,
+    tasks: [
+      "Menjadi penghubung antara komunitas kampus dan ekosistem teknologi Google.",
+      "Menginisiasi dan membantu menyelenggarakan sesi sharing, workshop, dan kegiatan literasi digital.",
+      "Mendorong teman-teman mahasiswa untuk mengeksplorasi teknologi baru dan peluang pengembangan diri di bidang IT.",
     ],
   },
 ];
@@ -49,7 +73,7 @@ const ExperienceSection = () => {
             Pengalaman <span className="gradient-text">Saya</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            Perjalanan organisasi, kepanitiaan, dan pengembangan diri
+            Rangkaian magang, proyek, dan organisasi yang mengasah skill teknis dan soft skills
           </p>
         </div>
 

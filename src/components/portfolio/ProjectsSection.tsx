@@ -2,44 +2,44 @@ import { ExternalLink, Github, Folder } from 'lucide-react';
 
 const projects = [
   {
-    title: 'Landing Page Perusahaan Fiktif',
-    category: 'Proyek Kuliah – Pemrograman Web',
+    title: 'Website Alumni Sekolah dan Donasi (Unit Pengumpulan zakat)',
+    category: 'Intern Project - Client Work',
     description:
-      'Website company profile untuk perusahaan startup fiktif. Proyek ini mengajarkan saya tentang struktur layout yang baik dan responsive design.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
+      'Mengembangkan dan memelihara website klien dari sisi desain hingga implementasi frontend, sekaligus berkolaborasi dengan tim backend.',
+    tech: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Git', 'Figma', 'VS Code', 'GitHub',],
     liveUrl: '#',
     sourceUrl: '#',
-    image: '🏢',
+    image: '💻',
   },
   {
-    title: 'TaskMaster - To-Do List App',
-    category: 'Side Project',
+    title: 'Mobile App Developer – StudySprint',
+    category: 'College Project',
     description:
-      'Aplikasi manajemen tugas dengan fitur CRUD lengkap dan penyimpanan lokal. Proyek pertama saya menggunakan React dan state management.',
-    tech: ['React', 'Tailwind CSS', 'LocalStorage'],
-    liveUrl: '#',
-    sourceUrl: '#',
-    image: '✅',
+      'Membangun aplikasi produktivitas belajar berbasis Android menggunakan Ionic React dengan fitur manajemen waktu dan penyimpanan data lokal.',
+    tech: ['IonicReact', 'TypeScript', 'Java', 'CSS', 'JavaScript', 'HTML', 'Android Studio'],
+    liveUrl: 'https://drive.google.com/file/d/1JIWWNmCdG5rLUihqh0MQD15SzkXKss0F/view?usp=sharing',
+    sourceUrl: 'https://github.com/RevinaAgustin/StudySprint.git',
+    image: '📱',
   },
   {
-    title: 'Spotify UI Clone',
-    category: 'Side Project',
+    title: 'Product Manager – GlowTech (AI Skincare Assistant)',
+    category: 'College Project',
     description:
-      'Cloning tampilan Spotify Web Player untuk melatih kemampuan CSS dan memahami layout kompleks dari aplikasi nyata.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
+      'Memimpin perancangan produk asisten perawatan kulit berbasis AI, mulai dari penyusunan visi, backlog fitur, hingga presentasi prototipe.',
+    tech: ['Product Management', 'Team Leadership', 'Agile', 'Teamwork'],
     liveUrl: '#',
     sourceUrl: '#',
-    image: '🎵',
+    image: '🤖',
   },
   {
-    title: 'Personal Blog',
-    category: 'Proyek Kuliah – Web Lanjutan',
+    title: 'Project Leader – SpyTech Smart Helmet IoT',
+    category: 'College Project',
     description:
-      'Blog sederhana dengan sistem artikel dan kategori. Fokus pada semantic HTML dan aksesibilitas dasar.',
-    tech: ['Next.js', 'Tailwind CSS', 'Markdown'],
+      'Memimpin tim pengembangan helm pintar berbasis IoT untuk pencegahan pencurian, membantu integrasi ESP32, GPS, dan notifikasi real-time via Telegram Bot.',
+    tech: ['Product Strategy', 'Team Leadership'],
     liveUrl: '#',
     sourceUrl: '#',
-    image: '📝',
+    image: '🏍️',
   },
 ];
 
@@ -124,13 +124,13 @@ const ProjectsSection = () => {
         {/* More Projects CTA */}
         <div className="text-center mt-12">
           <a
-            href="https://github.com"
+            href="https://github.com/RevinaAgustin"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-primary hover:underline"
           >
             <Folder size={18} />
-            Lihat lebih banyak proyek di GitHub
+            Lihat proyek di GitHub
           </a>
         </div>
       </div>

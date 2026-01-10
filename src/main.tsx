@@ -1,5 +1,13 @@
 import { createRoot } from "react-dom/client";
+import React from "react";
 import App from "./App.tsx";
 import "./index.css";
+import { FormspreeProvider } from "@formspree/react";
 
-createRoot(document.getElementById("root")!).render(<App />);
+createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <FormspreeProvider project="mkoowpwq">
+      <App />
+    </FormspreeProvider>
+  </React.StrictMode>
+);

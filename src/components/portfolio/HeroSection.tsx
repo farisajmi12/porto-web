@@ -23,7 +23,7 @@ const HeroSection = () => {
         <div className="text-center max-w-4xl mx-auto">
           {/* Greeting */}
           <p className="text-primary font-medium mb-4 animate-fade-up opacity-0" style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}>
-            👋 Halo, saya
+            Hello There! I'm
           </p>
 
           {/* Name */}
@@ -33,34 +33,39 @@ const HeroSection = () => {
 
           {/* Title */}
           <h2 className="text-xl sm:text-2xl md:text-3xl text-muted-foreground font-medium mb-8 animate-fade-up opacity-0" style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
-            Frontend Developer & Mahasiswa{' '}
-            <span className="text-foreground">Teknik Informatika</span>
+            Informatics Student focused on {' '}
+            <span className="text-foreground">Software Engineering & Product</span>
           </h2>
 
           {/* Description */}
           <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up opacity-0" style={{ animationDelay: '400ms', animationFillMode: 'forwards' }}>
-            Mahasiswa yang tertarik membangun antarmuka web yang bersih dan responsif 
-            melalui proyek kuliah dan side project. Selalu semangat belajar teknologi baru!
+            Mahasiswa yang memadukan logika kode dengan estetika desain untuk membangun produk digital yang fungsional. 
+            Berkomitmen menciptakan antarmuka web yang fungsional, responsif, dan berpusat pada pengguna
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up opacity-0" style={{ animationDelay: '500ms', animationFillMode: 'forwards' }}>
-            <button onClick={handleScrollToProjects} className="btn-primary flex items-center gap-2">
+          <div
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up opacity-0"
+            style={{ animationDelay: "500ms", animationFillMode: "forwards" }}
+          >
+            <button
+              onClick={handleScrollToProjects}
+              className="btn-primary flex items-center gap-2"
+            >
               Lihat Proyek
               <ArrowDown size={18} />
             </button>
+
             <a
-              href="#"
+              href="/RevinaAgustinRahma_CV.pdf"
+              download="Revina-Agustin-Rahma_CV.pdf"
               className="btn-outline flex items-center gap-2"
-              onClick={(e) => {
-                e.preventDefault();
-                alert('CV akan tersedia segera!');
-              }}
             >
               <Download size={18} />
               Download CV
             </a>
           </div>
+
         </div>
       </div>
 

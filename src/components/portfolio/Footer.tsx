@@ -11,12 +11,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
           <p className="text-muted-foreground text-sm flex items-center gap-1">
-            © 2026 Revina Agustin Rahma – Student Frontend Developer
-          </p>
-
-          {/* Made with love */}
-          <p className="text-muted-foreground text-sm flex items-center gap-1">
-            Dibuat dengan <Heart size={14} className="text-red-500 fill-red-500" /> di Tangerang
+            © 2026 Revina Agustin Rahma – Tech Enthusiast
           </p>
         </div>
       </div>

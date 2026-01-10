@@ -47,7 +47,7 @@ const Navbar = () => {
             }}
             className="text-xl md:text-2xl font-bold gradient-text"
           >
-            Revina
+            Revina's Tech Portofolio
           </a>
 
           {/* Desktop Navigation */}

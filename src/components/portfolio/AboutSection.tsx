@@ -1,58 +1,72 @@
-import { MapPin, GraduationCap, Target, Heart } from 'lucide-react';
+import { MapPin, GraduationCap, Target, Heart } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 md:py-28">
-      <div className="section-container">
+    // MODIFIKASI: Menambah padding-top (pt-32 md:pt-40) agar judul turun ke bawah
+    <section id="about" className="pt-32 pb-20 md:pt-40 md:pb-28 relative overflow-hidden bg-background">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        
         {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="section-title">
-            Tentang <span className="gradient-text">Saya</span>
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Tentang <span className="text-primary bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">Saya</span>
           </h2>
-          <p className="section-subtitle mx-auto">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Mengenal lebih dekat siapa saya dan apa yang saya kejar
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Avatar/Image placeholder */}
-          <div className="flex justify-center">
-            <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-2xl gradient-bg p-1">
-                <div className="w-full h-full bg-card rounded-2xl flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full bg-secondary flex items-center justify-center mb-4">
-                      <span className="text-5xl md:text-6xl">👩‍💻</span>
-                    </div>
-                    <p className="text-muted-foreground text-sm">Foto Profil</p>
-                  </div>
-                </div>
-              </div>
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-primary/20 rounded-full blur-xl" />
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-[hsl(199,89%,48%)]/20 rounded-full blur-xl" />
-            </div>
+        {/* Layout Grid: Foto Kiri, Konten Kanan */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-16 items-stretch">
+          
+          {/* FOTO - Dimodifikasi menjadi freeform (tanpa radius/shadow) dan memenuhi section */}
+          <div className="relative w-full h-full min-h-[400px] lg:min-h-0 order-2 lg:order-1">
+            <img
+              src="/foto_diri.png"
+              alt="Revina Agustin Rahma"
+              className="w-full h-full object-cover object-center block"
+            />
           </div>
 
-          {/* About Content */}
-          <div className="space-y-6">
+          {/* KONTEN UTAMA - Struktur teks tidak diubah, hanya margin dihapus */}
+          <div className="space-y-6 order-1 lg:order-2 flex flex-col justify-center">
             <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-              Hai! Saya <span className="text-foreground font-medium">Revina Agustin Rahma</span>, 
-              mahasiswa semester 6 di <span className="text-foreground font-medium">Teknik Informatika, 
-              Institut Teknologi Indonesia</span>. Saya memiliki ketertarikan mendalam pada dunia 
-              Frontend Development dan UI/UX Design.
+              Hai! Saya{" "}
+              <span className="text-foreground font-medium text-primary">
+                Revina Agustin Rahma
+              </span>
+              , mahasiswa jurusan{" "}
+              <span className="text-foreground font-medium">
+                Teknik Informatika
+              </span>{" "}
+              semester 6 di{" "}
+              <span className="text-foreground font-medium">
+                Institut Teknologi Indonesia
+              </span>{" "}
+              yang senang menggabungkan logika{" "}
+              <span className="text-foreground font-medium">
+                software engineering
+              </span>{" "}
+              dengan sudut pandang{" "}
+              <span className="text-foreground font-medium">
+                product & UI/UX
+              </span>
+              . Saya memiliki ketertarikan mendalam pada dunia Frontend
+              Development dan UI/UX Design.
             </p>
 
             <p className="text-muted-foreground leading-relaxed text-base md:text-lg">
-              Perjalanan saya di dunia web development dimulai dari tugas kuliah sederhana, 
-              dan kini saya terus mengembangkan skill melalui berbagai proyek pribadi dan 
-              kolaborasi tim. Saya percaya bahwa antarmuka yang baik adalah yang tidak hanya 
-              indah, tetapi juga fungsional dan mudah digunakan.
+              Saya banyak belajar melalui proyek nyata seperti merancang website
+              alumni, aplikasi produktivitas, prototipe produk berbasis AI, hingga
+              melalui tugas-tugas matakuliah, di mana saya terlibat dari riset
+              kebutuhan hingga tampilan akhir yang siap digunakan. Saya percaya
+              antarmuka yang efektif adalah yang membuat pengguna merasa tenang:
+              tampilan bersih, interaksi responsif, dan alur yang intuitif.
             </p>
 
-            {/* Info Cards */}
-            <div className="grid grid-cols-2 gap-4 pt-4">
-              <div className="bg-card border border-border rounded-xl p-4 flex items-start gap-3">
+            {/* Info Cards - Struktur tetap sama */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+              <div className="bg-card border border-border rounded-xl p-4 flex items-start gap-3 hover:border-primary/50 transition-colors">
                 <div className="p-2 rounded-lg bg-primary/10">
                   <MapPin size={20} className="text-primary" />
                 </div>
@@ -62,7 +76,7 @@ const AboutSection = () => {
                 </div>
               </div>
 
-              <div className="bg-card border border-border rounded-xl p-4 flex items-start gap-3">
+              <div className="bg-card border border-border rounded-xl p-4 flex items-start gap-3 hover:border-primary/50 transition-colors">
                 <div className="p-2 rounded-lg bg-primary/10">
                   <GraduationCap size={20} className="text-primary" />
                 </div>
@@ -72,27 +86,32 @@ const AboutSection = () => {
                 </div>
               </div>
 
-              <div className="bg-card border border-border rounded-xl p-4 flex items-start gap-3">
+              <div className="bg-card border border-border rounded-xl p-4 flex items-start gap-3 hover:border-primary/50 transition-colors">
                 <div className="p-2 rounded-lg bg-primary/10">
                   <Target size={20} className="text-primary" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Tujuan</p>
-                  <p className="font-medium">Magang & Freelance</p>
+                  <p className="font-medium">
+                    Magang (Offline/Online) & Freelance
+                  </p>
                 </div>
               </div>
 
-              <div className="bg-card border border-border rounded-xl p-4 flex items-start gap-3">
+              <div className="bg-card border border-border rounded-xl p-4 flex items-start gap-3 hover:border-primary/50 transition-colors">
                 <div className="p-2 rounded-lg bg-primary/10">
                   <Heart size={20} className="text-primary" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Minat</p>
-                  <p className="font-medium">Frontend & UI/UX</p>
+                  <p className="font-medium">
+                    Software Engineering & Product Management
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
