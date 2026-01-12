@@ -13,7 +13,7 @@ const skillCategories = [
       { name: "PHP", level: 75 },
       { name: "Git & GitHub", level: 80 },
       { name: "VS Code", level: 90 },
-      { name: "Figma", level: 80 },
+      { name: "CodeIgniter", level: 85 },
     ],
   },
   {
@@ -37,7 +37,7 @@ const skillCategories = [
     skills: [
       { name: "Product Management", level: 60 },
       { name: "Agile & Team Leadership", level: 65 },
-      { name: "Public Speaking & Teaching", level: 75 },
+      { name: "Public Speaking & Teaching", level: 55 },
       { name: "Problem Solving & Critical Thinking", level: 68 },
       { name: "Adaptabilitas & Kreativitas", level: 70 },
     ],

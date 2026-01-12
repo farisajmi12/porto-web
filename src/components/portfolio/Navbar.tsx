@@ -5,6 +5,7 @@ const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Skills', href: '#skills' },
+  { name: 'Certificates', href: '#certificates' },
   { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
   { name: 'Contact', href: '#contact' },
@@ -47,7 +48,7 @@ const Navbar = () => {
             }}
             className="text-xl md:text-2xl font-bold gradient-text"
           >
-            Revina's Tech Portofolio
+            Faris's Tech Portofolio
           </a>
 
           {/* Desktop Navigation */}

@@ -4,29 +4,29 @@ const socialLinks = [
   {
     name: 'Email',
     icon: Mail,
-    href: 'mailto:reviinagstn@gmail.com',
-    label: 'reviinagstn@gmail.com',
+    href: 'mailto:muhmmadfarisajmi@gmail.com',
+    label: 'muhmmadfarisajmi@gmail.com',
     color: 'hover:text-red-400',
   },
   {
     name: 'GitHub',
     icon: Github,
-    href: 'https://github.com/RevinaAgustin/',
-    label: '@revinaagustin',
+    href: 'https://github.com/farisajmi12/',
+    label: '@muhammadfarisajmi',
     color: 'hover:text-gray-300',
   },
   {
     name: 'LinkedIn',
     icon: Linkedin,
-    href: 'https://www.linkedin.com/in/revina-agustin-rahma/',
-    label: 'Revina Agustin Rahma',
+    href: 'https://www.linkedin.com/in/muhammad-faris-ajmi/',
+    label: 'Muhammad Faris Ajmi',
     color: 'hover:text-blue-400',
   },
   {
     name: 'Instagram',
     icon: Instagram,
-    href: 'https://www.instagram.com/revinagstn_?igsh=MXRvY2ZybjFhcmpkYw==',
-    label: '@revinagstn_',
+    href: 'https://www.instagram.com/muhhfarzz?utm_source=qr&igsh=MXEzbXVqY2o5bnl2ag==',
+    label: '@muhfarzz',
     color: 'hover:text-pink-400',
   },
 ];
@@ -41,7 +41,7 @@ const ContactSection = () => {
             Hubungi <span className="gradient-text">Saya</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            Tertarik untuk berkolaborasi atau punya kesempatan menarik? Mari terhubung!
+            Tertarik untuk berkolaborasi atau punya kesempatan menarik? Let's Connect!
           </p>
         </div>
 
@@ -134,7 +134,7 @@ const ContactSection = () => {
                 </button>
 
                 <p className="text-xs text-muted-foreground text-center mt-4">
-                  * Form ini belum aktif sepenuhnya. Untuk saat ini, silakan hubungi saya melalui email atau sosial media di sebelah kiri.
+                  * Form ini masih dalam tahap pengembangan. Untuk saat ini, silakan hubungi saya melalui email atau sosial media di sebelah kiri.
                 </p>
               </form>
             </div>

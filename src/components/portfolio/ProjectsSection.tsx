@@ -6,40 +6,34 @@ const projects = [
     category: 'Intern Project - Client Work',
     description:
       'Mengembangkan dan memelihara website klien dari sisi desain hingga implementasi frontend, sekaligus berkolaborasi dengan tim backend.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Git', 'Figma', 'VS Code', 'GitHub',],
-    liveUrl: '#',
-    sourceUrl: '#',
-    image: '💻',
+    tech: ['HTML', 'CSS', 'JavaScript', 'PHP', 'Git', 'Figma', 'VS Code', 'GitHub'],
+    liveUrl: 'https://dezis.zyrex.win',
+    sourceUrl: 'https://github.com/farisajmi12',
+    figmaUrl: 'https://www.figma.com/proto/uy6AkneK8fJj6AuEsphQXY/JAROS?node-id=267-63&t=qySG9G9AaCf7hLEf-1',
+    // Menggunakan sertif1.jpg dari folder public
+    image: '/jaros.png',
   },
   {
-    title: 'Mobile App Developer – StudySprint',
+    title: 'Mobile App Developer – MoneyMate',
     category: 'College Project',
     description:
-      'Membangun aplikasi produktivitas belajar berbasis Android menggunakan Ionic React dengan fitur manajemen waktu dan penyimpanan data lokal.',
+      'Membangun aplikasi produktivitas belajar berbasis Android menggunakan Ionic React dengan fitur mengantur uang, dan bisa menyimpan uang.',
     tech: ['IonicReact', 'TypeScript', 'Java', 'CSS', 'JavaScript', 'HTML', 'Android Studio'],
     liveUrl: 'https://drive.google.com/file/d/1JIWWNmCdG5rLUihqh0MQD15SzkXKss0F/view?usp=sharing',
-    sourceUrl: 'https://github.com/RevinaAgustin/StudySprint.git',
-    image: '📱',
+    sourceUrl: '',
+    // Menggunakan sertif2.jpg dari folder public
+    image: '/moneymate.png',
   },
   {
-    title: 'Product Manager – GlowTech (AI Skincare Assistant)',
+    title: 'SIMNU – Website Relawan Santri NU',
     category: 'College Project',
     description:
-      'Memimpin perancangan produk asisten perawatan kulit berbasis AI, mulai dari penyusunan visi, backlog fitur, hingga presentasi prototipe.',
+      'Membangun sistem manajemen data penerima manfaat (anak yatim, dhuafa, dll) dengan fitur CRUD dan validasi real-time',
     tech: ['Product Management', 'Team Leadership', 'Agile', 'Teamwork'],
-    liveUrl: '#',
-    sourceUrl: '#',
-    image: '🤖',
-  },
-  {
-    title: 'Project Leader – SpyTech Smart Helmet IoT',
-    category: 'College Project',
-    description:
-      'Memimpin tim pengembangan helm pintar berbasis IoT untuk pencegahan pencurian, membantu integrasi ESP32, GPS, dan notifikasi real-time via Telegram Bot.',
-    tech: ['Product Strategy', 'Team Leadership'],
-    liveUrl: '#',
-    sourceUrl: '#',
-    image: '🏍️',
+    liveUrl: 'https://relawansantrinu.dezis.id',
+    sourceUrl: 'https://github.com/farisajmi12',
+    // Jika belum ada gambar khusus, gunakan placeholder.svg atau icon.png
+    image: '/SIMNU.png',
   },
 ];
 
@@ -61,18 +55,26 @@ const ProjectsSection = () => {
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project, index) => (
             <div key={project.title} className="project-card group">
-              {/* Project Image/Icon */}
-              <div className="h-48 bg-gradient-to-br from-primary/20 to-[hsl(199,89%,48%)]/20 flex items-center justify-center text-6xl relative overflow-hidden">
-                <span className="group-hover:scale-110 transition-transform duration-300">
-                  {project.image}
-                </span>
+              
+              {/* === BAGIAN INI DIUBAH UNTUK MENAMPILKAN GAMBAR === */}
+              <div className="h-48 bg-muted relative overflow-hidden">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                
+                {/* Overlay Gelap (Opsional: agar tulisan di atas gambar terbaca jika ada, atau untuk estetika) */}
+                <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300" />
+
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4">
-                  <span className="bg-primary/20 text-primary text-xs font-medium px-3 py-1 rounded-full border border-primary/30">
+                  <span className="bg-background/80 backdrop-blur-sm text-primary text-xs font-medium px-3 py-1 rounded-full border border-primary/30">
                     {project.category}
                   </span>
                 </div>
               </div>
+              {/* ================================================= */}
 
               {/* Project Content */}
               <div className="p-6">
@@ -96,25 +98,42 @@ const ProjectsSection = () => {
                 </div>
 
                 {/* Links */}
-                <div className="flex gap-4">
-                  <a
-                    href={project.liveUrl}
-                    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ExternalLink size={16} />
-                    Live Demo
-                  </a>
-                  <a
-                    href={project.sourceUrl}
-                    className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github size={16} />
-                    Source Code
-                  </a>
+                <div className="flex flex-wrap gap-4">
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink size={16} />
+                      Live Demo
+                    </a>
+                  )}
+
+                  {project.sourceUrl && (
+                    <a
+                      href={project.sourceUrl}
+                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github size={16} />
+                      Source Code
+                    </a>
+                  )}
+
+                  {project.figmaUrl && (
+                    <a
+                      href={project.figmaUrl}
+                      className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink size={16} />
+                      Figma Prototype
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

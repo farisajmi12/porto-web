@@ -2,10 +2,12 @@ import Navbar from '@/components/portfolio/Navbar';
 import HeroSection from '@/components/portfolio/HeroSection';
 import AboutSection from '@/components/portfolio/AboutSection';
 import SkillsSection from '@/components/portfolio/SkillsSection';
+import CertificatesSection from "@/components/portfolio/CertificatesSection";
 import ProjectsSection from '@/components/portfolio/ProjectsSection';
 import ExperienceSection from '@/components/portfolio/ExperienceSection';
 import ContactSection from '@/components/portfolio/ContactSection';
 import Footer from '@/components/portfolio/Footer';
+
 
 const Index = () => {
   return (
@@ -15,6 +17,7 @@ const Index = () => {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
+        <CertificatesSection />
         <ProjectsSection />
         <ExperienceSection />
         <ContactSection />

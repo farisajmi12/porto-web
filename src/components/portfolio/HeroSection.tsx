@@ -28,7 +28,7 @@ const HeroSection = () => {
 
           {/* Name */}
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-up opacity-0" style={{ animationDelay: '200ms', animationFillMode: 'forwards' }}>
-            <span className="gradient-text">Revina Agustin Rahma</span>
+            <span className="gradient-text">Muhammad Faris Ajmi</span>
           </h1>
 
           {/* Title */}
@@ -57,8 +57,8 @@ const HeroSection = () => {
             </button>
 
             <a
-              href="/RevinaAgustinRahma_CV.pdf"
-              download="Revina-Agustin-Rahma_CV.pdf"
+              href="/MuhammadFarisAjmi_CV.pdf"
+              download="Muhammad-Faris-Ajmi_CV.pdf"
               className="btn-outline flex items-center gap-2"
             >
               <Download size={18} />
