@@ -106,7 +106,7 @@ const AboutSection = () => {
                 <div>
                   <p className="text-sm text-muted-foreground">Minat</p>
                   <p className="font-medium">
-                    Software Engineering &amp; Product Management
+                     Web &amp; Mobile Development.
                   </p>
                 </div>
               </div>

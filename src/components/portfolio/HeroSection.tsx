@@ -34,7 +34,7 @@ const HeroSection = () => {
           {/* Title */}
           <h2 className="text-xl sm:text-2xl md:text-3xl text-muted-foreground font-medium mb-8 animate-fade-up opacity-0" style={{ animationDelay: '300ms', animationFillMode: 'forwards' }}>
             Informatics Student focused on {' '}
-            <span className="text-foreground">Software Engineering & Product</span>
+            <span className="text-foreground"> Fullstack Development</span>
           </h2>
 
           {/* Description */}

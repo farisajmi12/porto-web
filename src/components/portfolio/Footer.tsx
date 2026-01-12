@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
           <p className="text-muted-foreground text-sm flex items-center gap-1">
-            © 2026 Revina Agustin Rahma – Tech Enthusiast
+            © 2026 Muhammad Faris Ajmi – Web Enthusiast
           </p>
         </div>
       </div>
