@@ -19,7 +19,7 @@ const projects = [
     description:
       'Membangun aplikasi produktivitas belajar berbasis Android menggunakan Ionic React dengan fitur mengantur uang, dan bisa menyimpan uang.',
     tech: ['IonicReact', 'TypeScript', 'Java', 'CSS', 'JavaScript', 'HTML', 'Android Studio'],
-    liveUrl: 'https://drive.google.com/file/d/1JIWWNmCdG5rLUihqh0MQD15SzkXKss0F/view?usp=sharing',
+    liveUrl: 'https://drive.google.com/file/d/1192BhZffWCBEpnyovnMJ1wL3xOBwdRTx/view?usp=sharing',
     sourceUrl: '',
     // Menggunakan sertif2.jpg dari folder public
     image: '/moneymate.png',
